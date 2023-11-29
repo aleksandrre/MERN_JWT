@@ -1,9 +1,8 @@
 import express from "express";
 import { RepArtists } from "../models/bookModel.js";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import { Users } from "../models/usersModel.js";
 import jwt from "jsonwebtoken";
-
 
 const router = express.Router();
 
