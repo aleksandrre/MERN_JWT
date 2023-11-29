@@ -11,7 +11,7 @@ const UpdateArtist = () => {
 
   useEffect(() => {
     const getdata = async () => {
-      const response = await fetch(`http://localhost:4001/rap/${id}`, {
+      const response = await fetch(`https://mern-jwt.onrender.com//rap/${id}`, {
         headers: {
           authorization: `Bearer ${token.jwttoken}`,
         },
@@ -24,7 +24,7 @@ const UpdateArtist = () => {
 
   async function postData() {
     try {
-      const response = await fetch(`http://localhost:4001/rap/${id}`, {
+      const response = await fetch(`https://mern-jwt.onrender.com//rap/${id}`, {
         method: "PUT",
         headers: {
           authorization: `Bearer ${token.jwttoken}`,

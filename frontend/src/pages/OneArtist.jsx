@@ -10,7 +10,7 @@ const OneArtist = () => {
 
   useEffect(() => {
     const getOneArtist = async () => {
-      const response = await fetch(`http://localhost:4001/rap/${id}`, {
+      const response = await fetch(`https://mern-jwt.onrender.com//rap/${id}`, {
         headers: {
           authorization: `border ${token.jwttoken}`,
         },

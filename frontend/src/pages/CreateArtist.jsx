@@ -42,7 +42,7 @@ const CreateArtist = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:4001/rap", {
+      const response = await fetch("https://mern-jwt.onrender.com//rap", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token.jwttoken}`,

@@ -9,7 +9,7 @@ const Registration = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:4001/rap/users", {
+      const response = await fetch("https://mern-jwt.onrender.com//rap/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

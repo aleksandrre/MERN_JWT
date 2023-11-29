@@ -11,13 +11,16 @@ const SignIn = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:4001/rap/users/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, password }),
-      });
+      const response = await fetch(
+        "https://mern-jwt.onrender.com//rap/users/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ name, password }),
+        }
+      );
 
       if (response.ok) {
         const oneUser = await response.json();

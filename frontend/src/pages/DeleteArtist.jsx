@@ -9,7 +9,7 @@ const DeleteArtist = () => {
   const { token } = useContext(MyContext);
 
   const deleteArtist = async () => {
-    const response = await fetch(`http://localhost:4001/rap/${id}`, {
+    const response = await fetch(`https://mern-jwt.onrender.com//rap/${id}`, {
       method: "DELETE",
       headers: {
         authorization: `Bearer ${token.jwttoken}`,

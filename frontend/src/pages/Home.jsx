@@ -9,7 +9,7 @@ const Home = () => {
   const { token } = useContext(MyContext);
   useEffect(() => {
     const getdata = async () => {
-      const response = await fetch("http://localhost:4001/rap", {
+      const response = await fetch("https://mern-jwt.onrender.com//rap", {
         headers: {
           authorization: `border ${token.jwttoken}`,
         },
