@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(cors());
 app.use("/rap", router);
 mongoose
-  .connect("mongodb://localhost:27017")
+  .connect("mongodb+srv://aleksandre:movidadro021@cluster0.xvb47fa.mongodb.net/?retryWrites=true&w=majority")
   .then(() => {
     console.log("successfully connected");
     app.listen(4001, () => console.log("App is listening on 4001 port"));
